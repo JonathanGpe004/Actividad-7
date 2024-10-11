@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Imagen</title>
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cambiar Imagen con JavaScript</h1>
+    <img id="imagen" src="imagenn.jpg" alt="Imagen inicial">
+    <br>
+    <button onclick="cambiarImagen()">Cambiar Imagen</button>
+
+    <script>
+        function cambiarImagen() {
+            var img = document.getElementById('imagen');
+            if (img.src.includes('imagenn.jpg')) {
+                img.src = 'imagenn2.jpg';
+            } else {
+                img.src = 'imagenn.jpg';
+            }
+        }
+    </script>
+</body>
+</html>
